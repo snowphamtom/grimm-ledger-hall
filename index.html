@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GRIMM Hall — designated web3</title>
+<link rel="stylesheet" href="hall.css"/>
+</head>
+<body>
+<div class="sky"></div>
+<header class="bar">
+  <a class="mark" href="#designate">GRIMM HALL</a>
+  <nav>
+    <a href="#rings">Seals</a>
+    <a href="#designate">Designate</a>
+    <a href="#chain">Chain head</a>
+  </nav>
+  <button class="seat" id="connect" type="button">Connect wallet</button>
+</header>
+<main>
+  <p class="kicker">Designated web3 · no coin · no ledger append</p>
+  <h1>The clerk hare<br/>signs the door.</h1>
+  <p id="wallet">No wallet yet. Hash still works. Nothing is admitted.</p>
+  <section id="rings">
+    <h2>Three seals</h2>
+    <p>VERIFIED · PARTIALLY_VERIFIED · UNVERIFIED. FACT and TRL6 are refused.</p>
+  </section>
+  <section id="chain">
+    <h2>Chain head</h2>
+    <p>seq182 · BUILDER-HANDOFF-20261004 · prev_hash sha256:259e15b770b7d2cc30a98638182ea2684ccd500271845f9ca5c34cbfcfd9da16</p>
+    <p>H-SG-AB-002 stays PARTIALLY_VERIFIED. Next gate: a second scorer. H-DEMO-T6-001 stays UNVERIFIED. Demo exit open.</p>
+  </section>
+  <section class="designate" id="designate">
+    <h2>Sign a plate</h2>
+    <label for="line">Line to hash</label>
+    <textarea id="line">H-SG-AB-002 remains PARTIALLY_VERIFIED pending an independent second scorer.</textarea>
+    <button id="seal" type="button">Hash this line</button>
+    <button id="sign" type="button">Sign designation</button>
+    <pre id="plate"></pre>
+    <pre id="signed"></pre>
+  </section>
+  <pre id="manifest">{"object":"grimm-ledger-hall","admitted":false,"site":"8db38d8c-7ba0-41a9-81dd-c375ce56ddd0"}</pre>
+  <p id="door"></p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
